@@ -1,0 +1,199 @@
+.containeree{
+    position: relative;
+    width: 100%;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.containeree .head{
+    background-image: url("../public/images/hero-bg.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 150px;
+}
+.containeree .head .content div:first-of-type{
+    font-size: 30px;
+}
+.containeree .head .content div:nth-of-type(2){
+    font-size: 50px;
+}
+.containeree .head .content div:nth-of-type(3){
+    font-size: 70px;
+}
+.containeree .head .content button{
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+}
+.containeree .head .content p{
+    font-size: 18px;
+    width: 50%;
+    margin: 20px auto;
+}
+.HEALTHY_MIND{
+    text-align: center;
+    background-image: url('../public/images/healthy-bg.jpg');
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0px;
+}
+.HEALTHY_MIND h2{
+    padding: 40px 0;
+}
+.HEALTHY_MIND p{
+    padding: 25px 15px;
+    font-weight: 500;
+}
+.HEALTHY_MIND button{
+    margin: 20px 0;
+    padding: 10px 40px;
+    font-size: larger;
+    border-radius: 0;
+}
+/* 
+@media (max-width:1180px){
+    
+} */
+@media (max-width: 577px) {
+    .containeree .head .content div:first-of-type{
+        font-size: 20px;
+    }
+    .containeree .head .content div:nth-of-type(2){
+        font-size: 33px;
+    }
+    .containeree .head .content div:nth-of-type(3){
+        font-size: 48px;
+    }
+    .containeree .head .content p{
+        font-size: 15px;
+        width: 70%;
+    }
+}
+@media (min-width: 577px) {
+    .containeree .head .content div:first-of-type{
+        font-size: 25px;
+    }
+    .containeree .head .content div:nth-of-type(2){
+        font-size: 45px;
+    }
+    .containeree .head .content div:nth-of-type(3){
+        font-size: 60px;
+    }
+    .containeree .head .content p{
+        font-size: 15px;
+    }
+}
+@media (min-width: 897px) {
+    .containeree .head .content div:first-of-type{
+        font-size: 28px;
+    }
+    .containeree .head .content div:nth-of-type(2){
+        font-size: 48px;
+    }
+    .containeree .head .content div:nth-of-type(3){
+        font-size: 63px;
+    }
+    .containeree .head .content p{
+        font-size: 18px;
+    }
+}
+@media (min-width: 984px) {
+    .containeree .head .content div:first-of-type{
+        font-size: 30px;
+    }
+    .containeree .head .content div:nth-of-type(2){
+        font-size: 50px;
+    }
+    .containeree .head .content div:nth-of-type(3){
+        font-size: 65px;
+    }
+    .containeree .head .content p{
+        font-size: 21px;
+        width: 60%;
+    }
+}
+@media (min-width:1160.1px) {
+    .containeree .head .content div:first-of-type{
+        font-size: 35px;
+    }
+    .containeree .head .content div:nth-of-type(2){
+        font-size: 55px;
+    }
+    .containeree .head .content div:nth-of-type(3){
+        font-size: 70px;
+    }
+    .containeree .head .content p{
+        font-size: 25px;
+        width: 60%;
+    }
+}
+@media (min-width: 577px) and (orientation: landscape) {
+    .containeree .head .content div:first-of-type {
+      font-size: 28px;
+    }
+    .containeree .head .content div:nth-of-type(2) {
+      font-size: 48px;
+    }
+    .containeree .head .content div:nth-of-type(3) {
+      font-size: 63px;
+    }
+    .containeree .head .content p {
+      font-size: 18px;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 897px) and (orientation: landscape) {
+    .containeree .head .content div:first-of-type {
+      font-size: 30px;
+    }
+    .containeree .head .content div:nth-of-type(2) {
+      font-size: 50px;
+    }
+    .containeree .head .content div:nth-of-type(3) {
+      font-size: 65px;
+    }
+    .containeree .head .content p {
+      font-size: 20px;
+      width: 75%;
+    }
+  }
+  
+  @media (min-width: 984px) and (orientation: landscape) {
+    .containeree .head .content div:first-of-type {
+      font-size: 32px;
+    }
+    .containeree .head .content div:nth-of-type(2) {
+      font-size: 52px;
+    }
+    .containeree .head .content div:nth-of-type(3) {
+      font-size: 67px;
+    }
+    .containeree .head .content p {
+      font-size: 22px;
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 1160.1px) and (orientation: landscape) {
+    .containeree .head .content div:first-of-type {
+      font-size: 37px;
+    }
+    .containeree .head .content div:nth-of-type(2) {
+      font-size: 57px;
+    }
+    .containeree .head .content div:nth-of-type(3) {
+      font-size: 72px;
+    }
+    .containeree .head .content p {
+      font-size: 27px;
+      width: 65%;
+    }
+    
+  }
+/* @media (min-width: 1181px) { /* Corrected breakpoint *
+    
+} */

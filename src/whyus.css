@@ -1,0 +1,47 @@
+.whyus{
+    width: 100%;
+    background-image: url("../public/images/us-bg.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+.whyus .title{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    margin: 100px auto;
+    width: max-content;
+}
+.whyus .title::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 5px;
+    background-color: red;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card{
+    border: 0 !important;
+}
+@media (min-width:1160.1px) {
+    .whyus .title{
+        margin-top: 100px !important;
+    }
+}
+#detail{
+    backdrop-filter: blur(100px);
+    margin-top: 110px !important;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.floate{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    background-color: white;
+}

@@ -1,0 +1,90 @@
+.contactUs{
+    width: 100%;
+    background-color: #27223f;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+.contactUs .content{
+    padding: 20px;
+}
+.contactUs .content .picture{
+    width: 50%;
+    height: 500px;
+    background-image: url("../public/images/contact-img.jpg");
+    background-size: 100% 100%;
+}
+.contactUs .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactUs .content form input,.contactUs .content form textarea{
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-size: larger;
+}
+.contactUs .content form input{
+    height: 50px;
+    
+}
+.contactUs .content form input::placeholder{
+    color: black;
+    font-weight: 700;
+}
+.contactUs .content form textarea{
+    height: 100px;
+}
+.contactUs .content form textarea::placeholder{
+    color: black;
+    font-weight: 700;
+}
+.contactUs .content form button{
+    background-color: red;
+    margin: 20px auto;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+}
+.contactUs .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 20px auto;
+    width: max-content;
+}
+.contactUs .title::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 5px;
+    background-color: red;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#detail{
+    backdrop-filter: blur(100px);
+    margin-top: 110px !important;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.floate{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    background-color: white;
+}
+@media (max-width:991px) {
+    .contactUs .content .picture{
+        width: 100%;
+    }
+}

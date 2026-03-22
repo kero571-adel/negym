@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  transition-duration: 0.5s;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: white !important;
+  text-decoration: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+svg{
+  font-size: xx-large !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav{
   color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 99%;
+  z-index: 2;
 }
-
-.App-link {
-  color: #61dafb;
+nav .content{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav .content .logo{
+  font-size: x-large;
+  font-weight: bold;
+}
+nav .content .links div,nav .linksHidden div{
+  font-weight: 600;
+  font-size: large;
+  width: 108px;
+  text-align: center;
+  cursor: pointer;
+}
+nav .content .links{
+  display: flex;
+}
+nav .content .links div{
+  margin: 0 20px;
+}
+nav .linksHidden div{
+  margin: 15px auto;
+}
+nav .content .links div:hover{
+  border-bottom: rgb(181, 16, 33) 5px solid;
+  transition: 0.1s;
+}
+nav .linksHidden div:hover{
+  border-bottom: rgb(181, 16, 33) 5px solid;
+  transition: 0.1s;
+}
+nav .content .btn{
+  display: none;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000072;
+  border-radius: 10px;
+}
+nav .content .btn:hover{
+  background-color: rgba(23, 22, 22, 0.771);
+}
+nav .content .btn div{
+  background: white;
+  width: 23px;
+  height: 3px;
+  margin: 2px 2px;
+  border-radius: 10px;
+}
+@media (min-width:1160.1px) {
+  nav .linksHidden{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width:1160px) {
+  nav .content .btn{
+    display: flex;
+  }
+  nav .content .links{
+    display: none;
   }
 }

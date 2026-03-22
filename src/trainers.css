@@ -1,0 +1,75 @@
+.trainers{
+    width: 100%;
+    background-image: url("../public/images/trainer-bg.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+.trainers .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 100px auto;
+    width: max-content;
+}
+.trainers .title::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 5px;
+    background-color: red;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card{
+    border: 0 !important;
+}
+.trainers .picture1,.trainers .picture2,.trainers .picture3{
+    position: relative;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    width: 290px;
+    height: 290px;
+    margin: auto;
+}
+.trainers .picture1{
+    background-image: url('../public/images/t1.jpg');
+}
+.trainers .picture2{
+    background-image: url('../public/images/t3.jpg');
+}
+.trainers .picture3{
+    background-image: url('../public/images/t3.jpg');
+}
+.trainers .picture1 .icon,.trainers .picture2 .icon,.trainers .picture3 .icon{
+    position: absolute;
+    display: flex;
+    border-radius: 20px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.trainers .icon svg{
+    margin: 10px 20px;
+}
+@media (min-width:1160.1px) {
+    .trainers .title{
+        margin-top: 100px !important;
+    }
+}
+#detail{
+    backdrop-filter: blur(100px);
+    margin-top: 110px !important;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.floate{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    background-color: white;
+}
